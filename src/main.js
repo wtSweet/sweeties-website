@@ -147,6 +147,17 @@ document.querySelector('#app').innerHTML = `
             : 'No shows announced yet, check back soon!'
         }</p>
       </div>
+      <figure class="shows__video">
+        <video
+          controls
+          playsinline
+          preload="metadata"
+          src="/images/BuddyHolly.mp4"
+        >
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Join us in the crowd!</figcaption>
+      </figure>
       ${
         SHOWS.length
           ? `<ul class="show-list">

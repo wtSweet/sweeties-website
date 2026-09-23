@@ -506,6 +506,28 @@ body.is-ready .hero__scroll {
   border-top: 1px solid var(--line);
 }
 
+.shows__video {
+  margin: 0 0 2.5rem;
+  max-width: 40rem;
+}
+
+.shows__video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--bg-deep);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.shows__video figcaption {
+  margin-top: 0.85rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  letter-spacing: -0.02em;
+}
+
 .show-list {
   margin: 0;
   padding: 0;
