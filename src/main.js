@@ -82,7 +82,7 @@ document.querySelector('#app').innerHTML = `
       <div class="hero__content">
         <h1 class="hero__brand">The Sweeties</h1>
         <p class="hero__headline">Your New Favorite Band</p>
-        <p class="hero__lede">Indie/alt rock band from the Wisconsin.</p>
+        <p class="hero__lede">Indie/alt rock band from Wisconsin.</p>
         <div class="hero__actions">
           <a class="btn btn--primary" href="#listen">Listen Now</a>
         </div>
@@ -204,21 +204,34 @@ document.querySelector('#app').innerHTML = `
     </section>
 
     <section id="connect" class="section connect" data-reveal>
-      <div class="section__head">
-        <p class="eyebrow">Connect With Us</p>
-        <h2>Find The Sweeties</h2>
-        <p class="section__lede">New releases, show times, booking, and fun clips!</p>
+      <div class="connect__top">
+        <div class="connect__copy">
+          <div class="section__head">
+            <p class="eyebrow">Connect With Us</p>
+            <h2>Find The Sweeties</h2>
+            <p class="section__lede">New releases, show times, booking, and fun clips!</p>
+          </div>
+          <ul class="social-list">
+            ${SOCIALS.map(
+              (s) => `
+              <li>
+                <a href="${s.href}" rel="noopener noreferrer" target="_blank">${s.label}</a>
+              </li>
+            `,
+            ).join('')}
+          </ul>
+          <a class="connect__mail" href="mailto:officialsweetiesband@gmail.com">officialsweetiesband@gmail.com</a>
+        </div>
+        <figure class="connect__media">
+          <img
+            src="/images/zachbass.jpg"
+            alt="Zach playing bass outdoors at dusk next to a drum kit under string lights"
+            width="1200"
+            height="1200"
+            loading="lazy"
+          />
+        </figure>
       </div>
-      <ul class="social-list">
-        ${SOCIALS.map(
-          (s) => `
-          <li>
-            <a href="${s.href}" rel="noopener noreferrer" target="_blank">${s.label}</a>
-          </li>
-        `,
-        ).join('')}
-      </ul>
-      <a class="connect__mail" href="mailto:officialsweetiesband@gmail.com">officialsweetiesband@gmail.com</a>
     </section>
   </main>
 
