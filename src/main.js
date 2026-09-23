@@ -46,9 +46,7 @@ const SHOWS = [
 
 const SOCIALS = [
   { label: 'Instagram', href: 'https://www.instagram.com/sweetiesband/' },
-  { label: 'Spotify', href: 'https://open.spotify.com/artist/2FSa6XZPWe1MqPRXotMjge' },
-  { label: 'YouTube', href: 'https://www.youtube.com/@sweeetiesband' },
-  { label: 'YouTube Music', href: 'https://music.youtube.com/@sweeetiesband' },
+  { label: 'TikTok', href: 'https://www.tiktok.com/@sweetiesband' },
 ]
 
 document.querySelector('#app').innerHTML = `
@@ -83,8 +81,8 @@ document.querySelector('#app').innerHTML = `
       </div>
       <div class="hero__content">
         <h1 class="hero__brand">The Sweeties</h1>
-        <p class="hero__headline">Feedback, melody, and late-night static.</p>
-        <p class="hero__lede">Indie / alternative rock from the Midwest.</p>
+        <p class="hero__headline">Your New Favorite Band</p>
+        <p class="hero__lede">Indie/alt rock band from the Wisconsin.</p>
         <div class="hero__actions">
           <a class="btn btn--primary" href="#listen">Listen Now</a>
         </div>
