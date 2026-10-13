@@ -1,4 +1,7 @@
 import './style.css'
+import { inject } from '@vercel/analytics'
+
+inject()
 
 const SHOWS = [
   // Uncomment and edit when you have dates:
